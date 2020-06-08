@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% static 'core/img/about.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" 
+            src="{% static 'core/img/avatar.jpeg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Lautaro Jimeno Bravo</h2>   
+        <p><b>Ciudad Autónoma de Buenos Aires</b></p>
+        <p><b>19 años</b></p>
+        <p>Soy estudiante de Diseño de Imagen y Sonido y estoy en un
+        entrenamiento para ser programador.</p>
+        <p>Soy una persona creativa, solidaria, sociable y empática.
+        Puedo trabajar en equipo y llegar a los objetivos comunes.</p>
+    </div>
+</div>
+{% endblock %}

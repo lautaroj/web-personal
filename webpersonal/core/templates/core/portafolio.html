@@ -1,0 +1,55 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Portafolio{% endblock %}
+
+{% block background %}{% static 'core/img/portafolio.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Portafolio</h1>
+    <span class="subheading">Curriculum</span>
+{% endblock %}
+
+{% block content %}
+    <!-- Estudio -->
+    <div class="row project">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" 
+                src="{% static 'core/img/about.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Estudios Universitarios</h2>   
+            <p>Diseño de Imagen y Sonido - <b>UBA</b></p>
+            <p>2018 - ACTUAL</p>
+        </div>
+    </div>
+    <!-- Estudio -->
+    <div class="row project">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" 
+                src="{% static 'core/img/secundaria.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Estudios Secundarios</h2>   
+            <p>Escuela Superior de Comercio Carlos Pellegrini - <b>Perito Mercantil</b></p>
+            <p>2013 - 2017</p>
+        </div>
+    </div>
+    <!-- Otros conocimientos -->
+    <div class="row project">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" 
+                src="{% static 'core/img/conocimientos.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Otros conocimientos</h2>   
+            <ul>
+                <li><p><b>Inglés</b></p><p>Oral y escrito - Nivel avanzado</p></li>
+                <li><p><b>Francés</b></p><p>Oral y escrito - Nivel intermedio</p></li>
+                <li><p><b>Paquete Office</b></p><p>Word, Excel, PowerPoint, Access</p></li>
+                <li><p><b>Redes Sociales</b></p></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
